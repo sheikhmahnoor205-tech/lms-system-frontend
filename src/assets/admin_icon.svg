@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="adminGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Shield Badge -->
+  <path d="M 100,20 L 165,45 V 105 C 165,145 130,175 100,188 C 70,175 35,145 35,105 V 45 Z" fill="url(#adminGrad)" />
+  <!-- Inner White Keyhole / Admin Avatar -->
+  <circle cx="100" cy="85" r="22" fill="#ffffff" />
+  <path d="M 75,138 C 75,118 85,112 100,112 C 115,112 125,118 125,138 Z" fill="#ffffff" />
+  <!-- Keyhole detail -->
+  <circle cx="100" cy="82" r="7" fill="#4f46e5" />
+  <polygon points="96,82 104,82 106,96 94,96" fill="#4f46e5" />
+</svg>

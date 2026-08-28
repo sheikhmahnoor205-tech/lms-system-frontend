@@ -1,0 +1,264 @@
+/* Professional Academic Performance & GPA Scorecard Styles */
+
+.academic-portal-container {
+  padding: 0.5rem;
+}
+
+/* Header & Controls */
+.marks-header-card {
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ===== KPI Stat Cards – uniform sizing ===== */
+.marks-kpi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.marks-kpi-col {
+  flex: 1 1 0;
+  min-width: 200px;
+  display: flex;
+}
+
+.marks-kpi-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 110px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+
+.marks-kpi-card .kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted, #64748b);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.marks-kpi-card .kpi-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Student Summary Card */
+.student-summary-card {
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.student-summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.student-summary-table th {
+  background-color: rgba(79, 70, 229, 0.06);
+  color: var(--text-muted, #334155);
+  font-weight: 700;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color, #cbd5e1);
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.student-summary-table td {
+  padding: 10px 14px;
+  border: 1px solid var(--border-color, #cbd5e1);
+  color: var(--text-main, #0f172a);
+  font-weight: 600;
+  background-color: var(--bg-card, #ffffff);
+}
+
+/* Semester Banner */
+.semester-banner {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #ffffff;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Course Grade Sheet Table */
+.transcript-table-container {
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.transcript-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 0;
+  table-layout: fixed;
+}
+
+.transcript-table th {
+  background-color: #047857;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  padding: 12px 8px;
+  border: 1px solid #065f46;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.transcript-table td {
+  padding: 10px 8px;
+  border: 1px solid var(--border-color, #cbd5e1);
+  vertical-align: middle;
+  color: var(--text-main, #0f172a);
+  background-color: var(--bg-card, #ffffff);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.transcript-table tbody tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme="dark"] .transcript-table tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.transcript-table tbody tr:hover td {
+  background-color: rgba(79, 70, 229, 0.08);
+}
+
+.transcript-table tfoot td {
+  background-color: var(--bg-card, #ffffff);
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid var(--border-color, #cbd5e1);
+}
+
+/* Marks input fields inside transcript table */
+.transcript-table .marks-input {
+  width: 100%;
+  max-width: 72px;
+  margin: 0 auto;
+  display: block;
+  padding: 0.2rem 0.25rem;
+  font-size: 13px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  border: 1px solid var(--border-color, #cbd5e1);
+  border-radius: 6px;
+  background: var(--bg-card, #ffffff);
+  color: var(--text-main, #0f172a);
+  transition: border-color 0.15s ease;
+}
+
+.transcript-table .marks-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+}
+
+/* Grade Badges */
+.grade-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  min-width: 36px;
+  text-align: center;
+}
+
+.grade-A { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+.grade-B { background: #dbeafe; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.grade-C { background: #fef9c3; color: #a16207; border: 1px solid #fef08a; }
+.grade-D { background: #ffedd5; color: #c2410c; border: 1px solid #fed7aa; }
+.grade-F { background: #fee2e2; color: #b91c1c; border: 1px solid #fecaca; }
+.grade-N { background: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
+.grade-P { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+
+[data-theme="dark"] .student-summary-table th {
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .student-summary-table td,
+[data-theme="dark"] .transcript-table td,
+[data-theme="dark"] .transcript-table tfoot td {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* ===== Subject Chips – uniform sizing for bulk view ===== */
+.subject-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  background: var(--bg-card, #f8fafc);
+  border: 1px solid var(--border-color, #e2e8f0);
+  min-width: 110px;
+  min-height: 28px;
+  box-sizing: border-box;
+}
+
+.subject-code-tag {
+  background: #4f46e5;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+.score-pill {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Marks score display – fixed-width number blocks */
+.marks-score-display {
+  display: inline-block;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 13px;
+  min-width: 60px;
+  text-align: center;
+}

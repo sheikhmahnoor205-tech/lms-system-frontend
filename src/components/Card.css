@@ -1,0 +1,85 @@
+.card{
+    background-color:rgb(235, 229, 229);
+    border:1px solid #183a65;
+    border-radius: 10px;
+    padding: 20px;
+    width:220px;
+    margin: 30px;
+    display:flex;
+    
+}
+
+
+.content {
+  padding: 30px;
+}
+
+
+.card2{
+    background-color:rgb(235, 229, 229);
+    border:1px solid #183a65;
+    border-radius: 10px;
+    padding: 20px;
+    width:220px;
+    margin: 30px;
+    display:flex
+
+}
+
+.content2{
+    padding: 30px;
+}
+
+
+.card3{
+    background-color:rgb(235, 229, 229);
+    border:1px solid #183a65;
+    border-radius: 10px;
+    padding: 20px;
+    width:220px;
+    margin: 30px;
+    display:flex
+
+}
+.content3{
+    padding: 30px;
+}
+
+
+.card4{
+    background-color:rgb(235, 229, 229);
+    border:1px solid #183a65;
+    border-radius: 10px;
+    padding: 20px;
+    width:220px;
+    margin: 30px;
+    display:flex
+
+}
+
+/* @media screen and (min-width: 1000px) {
+  .card4 {
+    background-color: lightgreen;
+    font-size: 18px;
+  }
+} */
+
+
+
+.content4{
+    padding: 30px;
+}
+
+
+
+.dashboardCards{
+     display: flex;
+  flex-wrap: wrap;
+}
+
+.card,
+.card2,
+.card3,
+.card4 {
+  min-height: 140px;
+}

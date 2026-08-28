@@ -1,0 +1,19 @@
+.custom-nav-pills .nav-link {
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 0.65rem;
+  padding: 0.65rem 1.25rem;
+  transition: all 0.2s ease;
+}
+
+.custom-nav-pills .nav-link:hover {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.custom-nav-pills .nav-link.active {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+}

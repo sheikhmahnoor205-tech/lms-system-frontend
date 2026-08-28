@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Graduation Cap (Navy Blue) -->
+  <polygon points="100,25 180,58 100,90 20,58" fill="#1e293b"/>
+  <path d="M 60,72 L 60,98 Q 100,118 140,98 L 140,72 Z" fill="#0f172a"/>
+  <!-- Tassel -->
+  <circle cx="100" cy="58" r="4" fill="#38bdf8"/>
+  <path d="M 100,58 Q 155,66 158,96" stroke="#38bdf8" stroke-width="4" fill="none"/>
+  
+  <!-- Open Book (Black & Dark Navy Pages) -->
+  <path d="M 100,114 Q 55,89 20,109 L 20,159 Q 60,139 100,159 Z" fill="#000000"/>
+  <path d="M 100,114 Q 145,89 180,109 L 180,159 Q 140,139 100,159 Z" fill="#000000"/>
+  
+  <!-- Inner Page Accents -->
+  <path d="M 100,114 L 100,159" stroke="#1e293b" stroke-width="5"/>
+  <path d="M 90,122 Q 55,102 28,118 L 28,148 Q 60,132 90,148 Z" fill="#1e293b"/>
+  <path d="M 110,122 Q 145,102 172,118 L 172,148 Q 140,132 110,148 Z" fill="#1e293b"/>
+
+  <!-- Lower Book Curve Accent -->
+  <path d="M 20,166 Q 60,146 100,168 Q 140,146 180,166" stroke="#1e293b" stroke-width="6" fill="none"/>
+</svg>
