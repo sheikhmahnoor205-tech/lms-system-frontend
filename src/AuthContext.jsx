@@ -13,7 +13,7 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     if (!currentUser) {
       // Default to dynamic Admin from DB
-      fetch('http://localhost:5000/admin-account/profile')
+      fetch('https://lms-system-backend-ljz1.onrender.com/admin-account/profile')
         .then(res => res.json())
         .then(adminData => {
           if (adminData && adminData.name) {
@@ -50,7 +50,7 @@ export function AuthProvider({ children }) {
     if (normalizedRole === 'teacher') {
       try {
         if (email && password) {
-          const res = await fetch('http://localhost:5000/teacher/login', {
+          const res = await fetch('https://lms-system-backend-ljz1.onrender.com/teacher/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -75,7 +75,7 @@ export function AuthProvider({ children }) {
           return { success: true, user: userToSet };
         } else {
           // Quick switch / fetch first real teacher from DB
-          const tRes = await fetch('http://localhost:5000/teacher');
+          const tRes = await fetch('https://lms-system-backend-ljz1.onrender.com/teacher');
           if (tRes.ok) {
             const dbTeachers = await tRes.json();
             if (Array.isArray(dbTeachers) && dbTeachers.length > 0) {
@@ -104,7 +104,7 @@ export function AuthProvider({ children }) {
     } else if (normalizedRole === 'student') {
       try {
         if (email && password) {
-          const res = await fetch('http://localhost:5000/student/login', {
+          const res = await fetch('https://lms-system-backend-ljz1.onrender.com/student/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password })
@@ -138,7 +138,7 @@ export function AuthProvider({ children }) {
           return { success: true, user: userToSet };
         } else {
           // Fetch first real student from database
-          const sRes = await fetch('http://localhost:5000/student');
+          const sRes = await fetch('https://lms-system-backend-ljz1.onrender.com/student');
           if (sRes.ok) {
             const dbStudents = await sRes.json();
             if (Array.isArray(dbStudents) && dbStudents.length > 0) {
@@ -174,7 +174,7 @@ export function AuthProvider({ children }) {
     } else {
       // Admin role authentication against backend
       try {
-        const res = await fetch('http://localhost:5000/admin-account/login', {
+        const res = await fetch('https://lms-system-backend-ljz1.onrender.com/admin-account/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, password })

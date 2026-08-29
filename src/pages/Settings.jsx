@@ -47,7 +47,7 @@ export default function Settings() {
       await setSettings(formData);
     } else if (role === 'Teacher') {
       try {
-        await fetch(`http://localhost:5000/teacher/update/${currentUser?.id || currentUser?._id}`, {
+        await fetch(`https://lms-system-backend-ljz1.onrender.com/teacher/update/${currentUser?.id || currentUser?._id}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name: userProfile.name, email: userProfile.email })
@@ -57,7 +57,7 @@ export default function Settings() {
       }
     } else if (role === 'Student') {
       try {
-        await fetch(`http://localhost:5000/student/update/${currentUser?.id || currentUser?._id}`, {
+        await fetch(`https://lms-system-backend-ljz1.onrender.com/student/update/${currentUser?.id || currentUser?._id}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name: userProfile.name, email: userProfile.email })

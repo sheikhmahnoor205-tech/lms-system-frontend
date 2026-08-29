@@ -18,7 +18,7 @@ export default function AddDepartment() {
   useEffect(() => {
     const fetchDepartments = async () => {
       try {
-        const res = await fetch('http://localhost:5000/department');
+        const res = await fetch('https://lms-system-backend-ljz1.onrender.com/department');
         if (res.ok) {
           const data = await res.json();
           setDbDepartments(Array.isArray(data) ? data : []);
@@ -50,7 +50,7 @@ export default function AddDepartment() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/department/store', {
+      const res = await fetch('https://lms-system-backend-ljz1.onrender.com/department/store', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -72,7 +72,7 @@ export default function AddDepartment() {
         setDeptDesc('');
         setCourses([{ code: '', name: '', semester: '' }]);
         // Re-fetch to refresh the table
-        const refreshRes = await fetch('http://localhost:5000/department');
+        const refreshRes = await fetch('https://lms-system-backend-ljz1.onrender.com/department');
         if (refreshRes.ok) {
           const refreshed = await refreshRes.json();
           setDbDepartments(Array.isArray(refreshed) ? refreshed : []);

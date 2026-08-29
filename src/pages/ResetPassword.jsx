@@ -54,10 +54,10 @@ export default function ResetPassword() {
 
     try {
       const endpoint = selectedRole === 'admin'
-        ? 'http://localhost:5000/admin-account/reset-password'
+        ? 'https://lms-system-backend-ljz1.onrender.com/admin-account/reset-password'
         : selectedRole === 'teacher'
-        ? 'http://localhost:5000/teacher/reset-password'
-        : 'http://localhost:5000/student/reset-password';
+        ? 'https://lms-system-backend-ljz1.onrender.com/teacher/reset-password'
+        : 'https://lms-system-backend-ljz1.onrender.com/student/reset-password';
 
       const isOtp = /^\d{6}$/.test(tokenOrOtp.trim());
 

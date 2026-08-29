@@ -32,10 +32,10 @@ export default function ForgotPassword() {
 
     try {
       const endpoint = selectedRole === 'admin'
-        ? 'http://localhost:5000/admin-account/forgot-password'
+        ? 'https://lms-system-backend-ljz1.onrender.com/admin-account/forgot-password'
         : selectedRole === 'teacher'
-        ? 'http://localhost:5000/teacher/forgot-password'
-        : 'http://localhost:5000/student/forgot-password';
+        ? 'https://lms-system-backend-ljz1.onrender.com/teacher/forgot-password'
+        : 'https://lms-system-backend-ljz1.onrender.com/student/forgot-password';
 
       const response = await fetch(endpoint, {
         method: 'POST',

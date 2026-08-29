@@ -4,15 +4,15 @@ import axios from 'axios';
 const AttendanceContext = createContext();
 
 // Backend APIs (MongoDB)
-const STUDENT_API = 'http://localhost:5000/student';
-const DEPARTMENT_API = 'http://localhost:5000/department';
-const TEACHER_API = 'http://localhost:5000/teacher';
-const ASSIGN_API = 'http://localhost:5000/assigncourse';
-const SCHEDULE_API = 'http://localhost:5000/schedule';
-const ATTENDANCE_API = 'http://localhost:5000/attendance';
-const LEAVE_API = 'http://localhost:5000/leave';
-const SETTING_API = 'http://localhost:5000/setting';
-const NOTIFICATION_API = 'http://localhost:5000/notification';
+const STUDENT_API = 'https://lms-system-backend-ljz1.onrender.com/student';
+const DEPARTMENT_API = 'https://lms-system-backend-ljz1.onrender.com/department';
+const TEACHER_API = 'https://lms-system-backend-ljz1.onrender.com/teacher';
+const ASSIGN_API = 'https://lms-system-backend-ljz1.onrender.com/assigncourse';
+const SCHEDULE_API = 'https://lms-system-backend-ljz1.onrender.com/schedule';
+const ATTENDANCE_API = 'https://lms-system-backend-ljz1.onrender.com/attendance';
+const LEAVE_API = 'https://lms-system-backend-ljz1.onrender.com/leave';
+const SETTING_API = 'https://lms-system-backend-ljz1.onrender.com/setting';
+const NOTIFICATION_API = 'https://lms-system-backend-ljz1.onrender.com/notification';
 
 export const DEFAULT_AVATAR = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%2364748b" style="background:%23e2e8f0;border-radius:50%25"><circle cx="50" cy="36" r="22"/><path d="M 15 90 C 15 62, 32 54, 50 54 C 68 54, 85 62, 85 90 Z"/></svg>`;
 

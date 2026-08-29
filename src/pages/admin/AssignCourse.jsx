@@ -19,8 +19,8 @@ export default function AssignCourse() {
     setLoading(true);
     try {
       const [tRes, dRes] = await Promise.all([
-        fetch('http://localhost:5000/teacher'),
-        fetch('http://localhost:5000/department')
+        fetch('https://lms-system-backend-ljz1.onrender.com/teacher'),
+        fetch('https://lms-system-backend-ljz1.onrender.com/department')
       ]);
 
       if (tRes.ok) {
@@ -142,7 +142,7 @@ export default function AssignCourse() {
         assignedCourses: updatedAssigned
       };
 
-      const res = await fetch(`http://localhost:5000/teacher/update/${teacher._id}`, {
+      const res = await fetch(`https://lms-system-backend-ljz1.onrender.com/teacher/update/${teacher._id}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatePayload)
@@ -171,7 +171,7 @@ export default function AssignCourse() {
     const updated = (teacherObj.assignedCourses || []).filter(c => c.code !== courseCode);
 
     try {
-      const res = await fetch(`http://localhost:5000/teacher/update/${teacherObj._id}`, {
+      const res = await fetch(`https://lms-system-backend-ljz1.onrender.com/teacher/update/${teacherObj._id}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -50,7 +50,7 @@ export default function Signup() {
           dept: 'Computer Science',
           grade: 'Semester 1'
         };
-        const storeRes = await fetch('http://localhost:5000/student/store', {
+        const storeRes = await fetch('https://lms-system-backend-ljz1.onrender.com/student/store', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(studentPayload)
@@ -68,7 +68,7 @@ export default function Signup() {
           department: 'Computer Science',
           designation: 'Lecturer'
         };
-        const storeRes = await fetch('http://localhost:5000/teacher/store', {
+        const storeRes = await fetch('https://lms-system-backend-ljz1.onrender.com/teacher/store', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(teacherPayload)

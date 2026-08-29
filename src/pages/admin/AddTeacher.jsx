@@ -28,7 +28,7 @@ export default function AddTeacher() {
   useEffect(() => {
     const fetchDepartments = async () => {
       try {
-        const res = await fetch('http://localhost:5000/department');
+        const res = await fetch('https://lms-system-backend-ljz1.onrender.com/department');
         if (res.ok) {
           const data = await res.json();
           setDbDepartments(Array.isArray(data) ? data : []);
@@ -43,7 +43,7 @@ export default function AddTeacher() {
   const fetchTeachers = async () => {
     try {
       setLoadingTeachers(true);
-      const res = await fetch('http://localhost:5000/teacher');
+      const res = await fetch('https://lms-system-backend-ljz1.onrender.com/teacher');
       if (res.ok) {
         const data = await res.json();
         setDbTeachers(Array.isArray(data) ? data : []);
@@ -89,7 +89,7 @@ export default function AddTeacher() {
     setAlertInfo({ show: false, message: '', type: 'success' });
 
     try {
-      const res = await fetch('http://localhost:5000/teacher/store', {
+      const res = await fetch('https://lms-system-backend-ljz1.onrender.com/teacher/store', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
